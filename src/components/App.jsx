@@ -1,12 +1,13 @@
 import React from 'react';
-import '../styles/global.scss';
+import Layout from '../containers/Layout';
+import RecoveryPassword from '../containers/RecoveryPassword';
+import '../styles/global.css';
 
 const App = () => {
   return (
-    <>
-      <h1>Hola Mundo! desde React</h1>
-      <p>año 2021</p>
-    </>
+    <Layout>
+      <RecoveryPassword />
+    </Layout>
   );
 };
 
