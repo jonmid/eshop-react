@@ -1,27 +1,27 @@
 import React from 'react';
-import '../styles/RecoveryPassword.scss';
+import '../styles/NewPassword.scss';
 
-const RecoveryPassword = () => {
+const NewPassword = () => {
   return (
-    <div className='login'>
-      <div className='form-container'>
+    <div className='NewPassword'>
+      <div className='NewPassword-container'>
         <img src='./logos/logo_yard_sale.svg' alt='logo' className='logo' />
         <h1 className='title'>Create a new password</h1>
         <p className='subtitle'>Enter a new passwrd for yue account</p>
         <form action='/' className='form'>
-          <label htmlFor='password' className='label'>
+          <label for='password' className='label'>
             Password
           </label>
           <input type='password' id='password' placeholder='*********' className='input input-password' />
-          <label htmlFor='new-password' className='label'>
-            Re-enter password
+          <label for='new-password' className='label'>
+            Repeat Password
           </label>
           <input type='password' id='new-password' placeholder='*********' className='input input-password' />
-          <input type='submit' defaultValue='Confirm' className='primary-button login-button' />
+          <input type='submit' value='Confirm' className='primary-button login-button' />
         </form>
       </div>
     </div>
   );
 };
 
-export default RecoveryPassword;
+export default NewPassword;
